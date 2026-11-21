@@ -10,20 +10,22 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://awesomepals.ai/">
 <link rel="canonical" href="https://awesomepals.ai/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
 <style>
-:root{--ink:#14171A;--body:#3A4047;--muted:#555B62;--rule:#C9CCC8;--ground:#F2F3F1;--accent:#1D4ED8}
+:root{--ink:#33261F;--body:#5A4639;--muted:#6B5548;--rule:#E6D5C3;--ground:#FFF8EE;--accent:#B8394F;--accent-deep:#9A2C40}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--ground);color:var(--ink);font-family:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;line-height:1.6;word-break:keep-all;overflow-wrap:break-word;-webkit-text-size-adjust:100%}
 a{color:var(--ink)}a:hover{color:var(--body)}
 h1,h2,h3,p,dl,dd{margin:0}
 .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
-.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:13px;color:var(--muted)}
-.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:28px 0;border-bottom:2px solid var(--ink)}
-.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.mono{font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--muted)}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.brand{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand img{height:30px;width:auto;display:block}
 .brand b{font-size:20px;font-weight:700;letter-spacing:-.01em}
 .brand .mono{font-size:14px}
 .top nav{display:flex;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500}
@@ -34,15 +36,15 @@ h1{font-size:clamp(34px,5.6vw,72px);line-height:1.18;font-weight:700;letter-spac
 h1 em{font-style:normal;color:var(--accent)}
 .lead{font-size:clamp(16px,1.5vw,19px);max-width:640px;color:var(--body);text-wrap:pretty}
 .cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
-.cta{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;background:var(--accent);color:#fff;font-size:16px;font-weight:600;text-decoration:none}
-.cta:hover{color:#fff;background:#1A43BA}
+.cta{display:inline-flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;background:var(--accent);color:#fff;font-size:16px;font-weight:600;text-decoration:none}
+.cta:hover{color:#fff;background:var(--accent-deep)}
 .note{font-size:14px;color:var(--muted)}
-.sec{border-top:1px solid var(--ink);padding:28px 0 clamp(56px,7vw,88px);display:flex;flex-direction:column;gap:40px;scroll-margin-top:16px}
+.sec{border-top:1px solid var(--rule);padding:28px 0 clamp(56px,7vw,88px);display:flex;flex-direction:column;gap:40px;scroll-margin-top:16px}
 .sec-head{display:flex;align-items:baseline;gap:16px}
 h2{font-size:22px;font-weight:700;letter-spacing:-.01em}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:40px 48px}
 .card{display:flex;flex-direction:column;gap:12px}
-.card::before{content:"";width:40px;height:4px;background:var(--accent)}
+.card::before{content:"";width:40px;height:6px;border-radius:3px;background:#CF5568}
 .card h3{font-size:20px;font-weight:600;letter-spacing:-.01em}
 .card p{font-size:15px;color:var(--body);text-wrap:pretty}
 #work{gap:24px}
@@ -62,19 +64,19 @@ h2{font-size:22px;font-weight:700;letter-spacing:-.01em}
 .contact{display:flex;flex-wrap:wrap;gap:48px 64px}
 .contact>div{flex:999 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px}
 .contact .ask{font-size:clamp(22px,2.6vw,32px);line-height:1.35;font-weight:600;letter-spacing:-.02em;text-wrap:balance}
-.mail{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:clamp(17px,2vw,22px);font-weight:500;color:var(--accent);overflow-wrap:anywhere;text-decoration:none;padding:8px 0;align-self:flex-start}
-.mail:hover{color:#1A43BA;text-decoration:underline}
+.mail{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--accent);overflow-wrap:anywhere;text-decoration:none;padding:8px 0;align-self:flex-start}
+.mail:hover{color:var(--accent-deep);text-decoration:underline}
 .info{flex:1 1 320px;min-width:0;display:grid;grid-template-columns:96px minmax(0,1fr);font-size:15px;align-content:start;border-top:1px solid var(--rule)}
 .info dt,.info dd{padding:14px 0;border-bottom:1px solid var(--rule)}
 .info dt{color:var(--muted)}
-footer{border-top:2px solid var(--ink);padding:24px 0 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+footer{border-top:1px solid var(--rule);padding:24px 0 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header class="top">
-<div class="brand"><b>멋진친구들</b><span class="mono">awesomepals.ai</span></div>
+<div class="brand"><img src="logo.svg" alt=""><b>멋진친구들</b><span class="mono">awesomepals.ai</span></div>
 <nav aria-label="주요 메뉴">
 <a href="#services">하는 일</a>
 <a href="#work">해온 일</a>
@@ -85,7 +87,7 @@ footer{border-top:2px solid var(--ink);padding:24px 0 40px;display:flex;flex-wra
 
 <main>
 <section class="hero">
-<div class="mono">LLM SERVICES · AI INFRASTRUCTURE</div>
+<div class="mono">LLM 서비스 · AI 인프라</div>
 <h1>폐쇄망에서도 클라우드에서도 돌아가는 <em>LLM 서비스</em>를 만듭니다.</h1>
 <p class="lead">멋진친구들은 30년 차 개발자 박정현의 1인 개발 스튜디오입니다.<br>챗봇, 업무 자동화, 기존 시스템 연동까지 설계한 사람이 구현도 직접 맡습니다.</p>
 <div class="cta-row">
