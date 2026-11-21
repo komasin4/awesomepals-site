@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
 <style>
-:root{--ink:#33261F;--body:#5A4639;--muted:#6B5548;--rule:#E6D5C3;--ground:#FFF8EE;--accent:#B8394F;--accent-deep:#9A2C40}
+:root{--ink:#33261F;--body:#5A4639;--muted:#6B5548;--rule:#E6D5C3;--ground:#FFF8EE;--accent:#C2410C;--accent-deep:#9A3412;--orange:#F58220;--orange-text:#E8650A}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--ground);color:var(--ink);font-family:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;line-height:1.6;word-break:keep-all;overflow-wrap:break-word;-webkit-text-size-adjust:100%}
@@ -33,18 +33,18 @@ h1,h2,h3,p,dl,dd{margin:0}
 .hero{padding:clamp(56px,9vw,120px) 0 clamp(56px,8vw,104px);display:flex;flex-direction:column;gap:32px}
 .hero .mono{letter-spacing:.08em}
 h1{font-size:clamp(34px,5.6vw,72px);line-height:1.18;font-weight:700;letter-spacing:-.03em;max-width:960px;text-wrap:balance}
-h1 em{font-style:normal;color:var(--accent)}
+h1 em{font-style:normal;color:var(--orange-text)}
 .lead{font-size:clamp(16px,1.5vw,19px);max-width:640px;color:var(--body);text-wrap:pretty}
 .cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
-.cta{display:inline-flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;background:var(--accent);color:#fff;font-size:16px;font-weight:600;text-decoration:none}
-.cta:hover{color:#fff;background:var(--accent-deep)}
+.cta{display:inline-flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;background:var(--orange);color:var(--ink);font-size:16px;font-weight:700;text-decoration:none}
+.cta:hover{color:var(--ink);background:#FF9A3D}
 .note{font-size:14px;color:var(--muted)}
 .sec{border-top:1px solid var(--rule);padding:28px 0 clamp(56px,7vw,88px);display:flex;flex-direction:column;gap:40px;scroll-margin-top:16px}
 .sec-head{display:flex;align-items:baseline;gap:16px}
 h2{font-size:22px;font-weight:700;letter-spacing:-.01em}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:40px 48px}
 .card{display:flex;flex-direction:column;gap:12px}
-.card::before{content:"";width:40px;height:6px;border-radius:3px;background:#CF5568}
+.card::before{content:"";width:40px;height:6px;border-radius:3px;background:var(--orange)}
 .card h3{font-size:20px;font-weight:600;letter-spacing:-.01em}
 .card p{font-size:15px;color:var(--body);text-wrap:pretty}
 #work{gap:24px}
